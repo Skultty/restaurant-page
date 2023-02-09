@@ -12,7 +12,7 @@ let homePage = home();
 let menuPage = menu();
 let contactPage = contact();
 
-let currentPage = menuPage;
+let currentPage = contactPage;
 
 append(content, navBar);
 append(content, currentPage);
