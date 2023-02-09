@@ -37,3 +37,30 @@ body {
     font-size: 1.25rem;
     text-align: center;
 }
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.nav button {
+    background-color: #fff;
+    border: solid 1px #333;
+    font-size: 1.25rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.nav button:hover {
+    background-color: #333;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.nav button:active {
+    background-color: #fff;
+    color: #333;
+    transition: all 0.3s ease;
+}
