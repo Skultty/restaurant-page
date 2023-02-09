@@ -120,6 +120,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
 
 /***/ }),
 
+/***/ "./src/menuData.js":
+/*!*************************!*\
+  !*** ./src/menuData.js ***!
+  \*************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"food\": () => (/* binding */ food)\n/* harmony export */ });\nconst food = {\r\n    'Char-Grilled Octopi' : {\r\n        'description' : 'Octopi grilled to tender perfection, served with a side of \"I can\\'t believe it\\'s not butter\" lemon sauce.',\r\n        'price' : '$24.99'\r\n    },\r\n\r\n    'Sear-iously Good Scallops' : {\r\n        'description' : 'Plump scallops that will make you say \"seariously?\" served with a side of lemon butter sauce.',\r\n        'price' : '$32.99'\r\n    },\r\n\r\n    'Cluckin\\' Delicious Chicken' : {\r\n        'description' : 'Free-range chicken roasted until it\\'s so tender, it falls off the bone...just like your grandma\\'s famous chicken and dumplings!',\r\n        'price' : '$19.99'\r\n    },\r\n\r\n    'Ravioli, Oh My!' : {\r\n        'description' : 'Homemade ravioli filled with spinach and ricotta, served with a tomato sauce that\\'s so good, you\\'ll want to use it as a dipping sauce for everything!',\r\n        'price' : '$17.99'\r\n    },\r\n\r\n    'Grilled Rib-Eye-Oh My!' : {\r\n        'description' : 'A juicy and flavorful rib-eye steak that\\'s grilled to perfection and served with a side of roasted vegetables. You\\'ll want to say \"rib-eye-oh my!\" after every bite!',\r\n        'price' : '$34.99'\r\n    },\r\n}\r\n\r\n\n\n//# sourceURL=webpack://restaurant-page/./src/menuData.js?");
+
+/***/ }),
+
 /***/ "./src/nav.js":
 /*!********************!*\
   !*** ./src/nav.js ***!
@@ -156,7 +166,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \***************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"menu\": () => (/* binding */ menu)\n/* harmony export */ });\n/* harmony import */ var _utils_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../utils.js */ \"./src/utils.js\");\n\r\n\r\nconst menu = () => {\r\n    let menu = (0,_utils_js__WEBPACK_IMPORTED_MODULE_0__.createElement)('div', 'menu');\r\n    let menuText = (0,_utils_js__WEBPACK_IMPORTED_MODULE_0__.createElement)('p', 'menu-text', 'Menu');\r\n\r\n    (0,_utils_js__WEBPACK_IMPORTED_MODULE_0__.append)(menu, menuText);\r\n\r\n    return menu;\r\n}\r\n\r\n\n\n//# sourceURL=webpack://restaurant-page/./src/pages/menu.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"menu\": () => (/* binding */ menu)\n/* harmony export */ });\n/* harmony import */ var _utils_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../utils.js */ \"./src/utils.js\");\n/* harmony import */ var _menuData_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../menuData.js */ \"./src/menuData.js\");\n\r\n\r\n\r\nconst menu = () => {\r\n    let menu = (0,_utils_js__WEBPACK_IMPORTED_MODULE_0__.createElement)('div', 'menu');\r\n\r\n    for (let item in _menuData_js__WEBPACK_IMPORTED_MODULE_1__.food) {\r\n        let menuItem = (0,_utils_js__WEBPACK_IMPORTED_MODULE_0__.createElement)('div', 'menu-item');\r\n        let menuItemName = (0,_utils_js__WEBPACK_IMPORTED_MODULE_0__.createElement)('h2', 'menu-item-name', item);\r\n        let menuItemDescription = (0,_utils_js__WEBPACK_IMPORTED_MODULE_0__.createElement)('p', 'menu-item-description', _menuData_js__WEBPACK_IMPORTED_MODULE_1__.food[item].description);\r\n        let menuItemPrice = (0,_utils_js__WEBPACK_IMPORTED_MODULE_0__.createElement)('p', 'menu-item-price', _menuData_js__WEBPACK_IMPORTED_MODULE_1__.food[item].price);\r\n\r\n        (0,_utils_js__WEBPACK_IMPORTED_MODULE_0__.append)(menuItem, menuItemName);\r\n        (0,_utils_js__WEBPACK_IMPORTED_MODULE_0__.append)(menuItem, menuItemDescription);\r\n        (0,_utils_js__WEBPACK_IMPORTED_MODULE_0__.append)(menuItem, menuItemPrice);\r\n        (0,_utils_js__WEBPACK_IMPORTED_MODULE_0__.append)(menu, menuItem);\r\n    }\r\n\r\n    return menu;\r\n}\r\n\r\n\n\n//# sourceURL=webpack://restaurant-page/./src/pages/menu.js?");
 
 /***/ }),
 
