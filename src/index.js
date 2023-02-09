@@ -12,10 +12,10 @@ let homePage = home();
 let menuPage = menu();
 let contactPage = contact();
 
-let currentPage = homePage;
+let currentPage = menuPage;
 
 append(content, navBar);
-append(content, homePage);
+append(content, currentPage);
 
 // Event listeners
 const homeButton = document.querySelector('.home-button');
