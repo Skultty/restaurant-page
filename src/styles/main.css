@@ -12,11 +12,28 @@ body {
 }
 
 #content {
-    width: 100vw;
+    width: 50vw;
     height: 100vh;
+    display: grid;
+    grid-template-rows: 20% 80%;
+    grid-template-columns: 1fr;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.home {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    margin-top: 5rem;
     align-items: center;
 }
 
+.home h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0;
+}
+
+.home p {
+    font-size: 1.25rem;
+    text-align: center;
+}
